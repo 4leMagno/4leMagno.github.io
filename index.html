@@ -5,7 +5,7 @@
     </head>
     <body>
         <!-- conteudo -->
-        <p></p>Olá, pessoal</p>
+        <p></p><h2 id="linkCima">Olá, pessoal</h2></p>
         
         <p>Todos bem por aqui?</p>
         <h1>Título 1 </h1>
@@ -14,14 +14,22 @@
         <h4>Título 4 sub sub sub </h4>
         <h5>Título 5 sub sub sub sub</h5>
         <h6>Título 6 sub sub sub sub sub</h6>
+        <p>
 
-        <sup> o que esta tag sup faz? </sup>
+        </p>
+        <a href="#link"> Fim da pagina</a>
+        <p>          
+        </p>
+        <a href="#secList">Seleção de lista </a>
         <p></p>
-        <sub> o que esta tag sub faz ? </sub>
+        <a href="#secTable"> Seção de tabelas</a>
+        <p>ainda da para escrever<sup> o que esta tag sup faz? </sup> no fim continua</p>
+        <p></p>
+        <p>ai da para ver o que acontece <sub> o que esta tag sub faz ? </sub> ai fica legal</p>
         <p></p>
         <strong> o que esta tag strong faz?</strong>
         <p></p>
-        <em> o que esta tag em faz? </em>
+        <p>ai da para ver <em> o que esta tag em faz? </em> o que acontece quando usa em</p>
         <p></p>
         <del> o que esta tag del faz? </del>
         <p></p>
@@ -31,7 +39,7 @@
         <p></p>
         o que esta tag br  /  faz? <br/>
         <p></p>
-        o que esta tag hr / faz? <hr/> 
+        <p>o que esta tag hr / faz?  cria uma linha!!</p> 
         <p></p>
         <i>o que esta tag i faz? </i>
         <p></p>
@@ -40,5 +48,166 @@
         <s> o que o s faz? que eu não entendi ?? </s>
         <p></p>
         <ins> é uma quebra de linha ?</ins>
+        <hr>
+        <h3 id="secList"><a href="#linkCima">Lista </a></h3>
+        <p> lista não ordenadas</p> 
+        <ul>
+             <li>lista 0</li>
+             <li>lista 1</li>
+             <li>lista 2</li>
+         </ul>
+         <p> lista ordenada</p>
+         <ol>
+            <li>lista 0</li>
+            <li>lista 1</li>
+            <li>lista 2</li>
+        </ol>
+        <p>Definição de lista dl</p>
+        <dl>
+            <dt>Item para ser definido</dt>
+            <dd> descrição do item </dd>
+        </dl>
+        <hr>
+        <h2 id="secTable"> <a href="#linkCima">Tabelas </a> </h2>
+        <table>
+            <tr>linhas 1<td> aluno </td> <td> notas </td> <td> materia</td> </tr>
+            <tr>linhas 2<td> berg </td> <td> 10 </td> <td> web </td> </tr>
+            <tr>linhas 3<td> bernadete </td> <td> 5 </td> <td> web </td> </tr>
+            <tr>linhas 4<td> adriel </td> <td> 7,5 </td> <td> web </td> </tr>
+        </table>
+        <p></p>
+        <table border ="1">
+            <!-- <th> Aluno </th> posso trocar td por th para fazer titulos-->
+            <!-- <th> Notas </th>-->
+            <tr><td>Aluno</td> <td>Notas</td> <td>materia</td> </tr>
+            <tr><td> Almir</td> <td>7</td> <td>programação</td></tr>
+            <tr><td> bernadete</td><td> 6</td> <td>programação</td></tr>
+            <tr><td> zuilda</td> <td> 8</td> <td> programação</td></tr>
+        </table>
+        <p></p>
+        <h1> atividade de criar uma tabela igual a que o professor passou </h1>
+
+        <table border ="2">
+            <th>Indivíduo</th>
+            <th>Massa Corporal</th>
+            <th>Consumo anual de água</th>
+            <tr><td>1</td><td>90</td><td>850</td></tr>
+            <tr><td>2</td><td>120</td><td>400</td></tr>
+            <tr><td>3</td><td>60</td><td>300</td></tr>
+            <tr><td>4</td><td>40</td><td>550</td></tr>
+            <tr><td>5</td><td>82</td><td>490</td></tr>
+            <tr><td>6</td><td>90</td><td>350</td></tr>
+            
+        </table>
+        <p></p>
+        <p></p>
+        <!--
+        <table border="1">
+            <tr>
+              <td>Coluna 1, Linha 1</td>
+              <td colspan="2">Célula Estendida</td>
+              <td>Coluna 4, Linha 1</td>
+            </tr>
+            <tr>
+              <td>Coluna 1, Linha 2</td>
+              <td>Coluna 2, Linha 2</td>
+              <td>Coluna 3, Linha 2</td>
+              <td>Coluna 4, Linha 2</td>
+            </tr>
+          </table>
+          <p></p>
+          <table border="1">
+            <tr>
+              <td rowspan="2">Célula Estendida</td>
+              <td>Linha 1, Coluna 2</td>
+              <td>Linha 1, Coluna 3</td>
+            </tr>
+            <tr>
+              <td>Linha 2, Coluna 2</td>
+              <td>Linha 2, Coluna 3</td>
+            </tr>
+            
+        </table>
+        -->
+        <h3> exemplo células mescladas</h3>
+        <h4> mesclando linhas</h4>
+        <table border="1">
+            <th colspan="7"> TABELA SALARIAL - MODELO              
+            </th> 
+            <tr>
+                <td rowspan="2">CLASSE</td>
+                <td rowspan="2">ADMISSÃO</td>
+                <td>1<sup>o</sup> FAIXA</td>
+                <td>2<sup>o</sup> FAIXA</td>
+                <td>3º FAIXA</td>
+                <td>4º FAIXA</td>
+                <td>5<sup>o</sup> FAIXA</td>
+            </tr>
+            <tr>
+                <td>1<sup>o</sup> ANO</td>
+                <td>2<sup>o</sup> ANO</td>
+                <td>3<sup>o</sup> ANO</td>
+                <td>4º ANO</td>
+                <td>5º ANO</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>749</td>
+                <td>802</td>
+                <td>858</td>
+                <td>918</td>
+                <td>982</td>
+                <td>1.051</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>802</td>
+                <td>858</td>
+                <td>918</td>
+                <td>982</td>
+                <td>1.051</td>
+                <td>1.124</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>879</td>
+                <td>941</td>
+                <td>1.007</td>
+                <td>1.077</td>
+                <td>1.152</td>
+                <td>1.233</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+                                
+        </table>
+        <hr>
+        <h1> principal topico <strong> hiper texto</strong> </h1>
+        <h2> LINK </h2>
+        <p> hiper texto == qualquer objeto</p>
+        <p>é o caminho para se seguir...</p>
+        <!--Tag <a href="link"> hipertexto</a>-->
+        <a href="https://www.google.com">Google</a> <!-- URL estática-->
+        <p></p>
+        <a href="https://www.youtube.com">Passar Tempo</a>
+        <p></p>
+        <a href="HTML/fotos.html">Pagina de FOTOS</a><!-- URL dinamica-->
+        <p>     
+        </p>
+        <h2 id="link"> Link para o fim da pagina</h2>
+        <p></p>
+        <a href="#linkCima"> clique aqui para ir para o inicio da pagina</a>    
+    
+    
+    
+    
+    
     </body>
 </html>
