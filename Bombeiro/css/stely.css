@@ -1,0 +1,83 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #000; /* Texto preto para melhor legibilidade */
+    margin: 0; /* Remover margens padrão do corpo */
+    padding: 0; /* Remover preenchimento padrão do corpo */
+    background-image: url(/Bombeiro/Imagens/bombeiros\ mirins.jpeg); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+  }
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #4caf50; /* Verde da bandeira do Brasil */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Texto branco para melhor contraste */
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #fec92a; /* Amarelo da bandeira do Brasil */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  #perfilFoto {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Parte branca da página */
+  .background-branco {
+    background-color: #fff; /* Branco da bandeira do Brasil */
+  }
+
+  /* Cores dos bombeiros mirins */
+  .cor-vermelha {
+    color: #ff0000; /* Vermelho */
+  }
+
+  .cor-amarela {
+    color: #ffd700; /* Amarelo ouro */
+  }
+
+  .cor-azul {
+    color: #0000ff; /* Azul */
+  }
+
+  .cor-verde {
+    color: #008000; /* Verde */
+  }
+
+  /* Adicione mais classes de cor conforme necessário */
+</style>

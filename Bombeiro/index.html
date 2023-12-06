@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="/Bombeiro/css/stely.css" type="text/css" rel="stylesheet"/>
+    <title>Nomes</title>
+</head>
+<body>
+    <img src="/Bombeiro/Imagens/bombeiros mirins.jpeg" alt="Imagem em Tela Cheia">
+    <form>
+        <label for="foto">Foto de Perfil:</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="jogos">Jogos favoritos:</label>
+        <input type="text" id="jogos" name="jogos" required>
+
+        <label for="atividades">Lista de Atividades:</label>
+        <textarea id="atividades" name="atividades" rows="5"></textarea>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <div>
+        <h2>Perfil</h2>
+        <img id="perfilFoto" src="/Bombeiro/Imagens/bombeiros mirins.jpeg" alt="Bombeiros Mirins">
+        <p><strong>Nome:</strong> <span id="perfilNome"></span></p>
+        <p><strong>Jogos Favoritos:</strong> <span id="perfilJogos"></span></p>
+        <h3>Atividades:</h3>
+        <ul id="perfilAtividades"></ul>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Obter os valores dos campos
+            const nome = document.getElementById('nome').value;
+            const jogos = document.getElementById('jogos').value;
+            const atividades = document.getElementById('atividades').value.split('\n').filter(Boolean);
+            const fotoInput = document.getElementById('foto');
+            const foto = fotoInput.files[0];
+
+            // Atualizar o perfil na página
+            document.getElementById('perfilNome').textContent = nome;
+            document.getElementById('perfilJogos').textContent = jogos;
+
+            const atividadesList = document.getElementById('perfilAtividades');
+            atividadesList.innerHTML = ''; // Limpar a lista antes de adicionar novamente
+
+            atividades.forEach(function(atividade) {
+                const li = document.createElement('li');
+                li.textContent = atividade;
+                atividadesList.appendChild(li);
+            });
+
+            // Exibir a foto de perfil
+            if (foto) {
+                const fotoUrl = URL.createObjectURL(foto);
+                document.getElementById('perfilFoto').src = fotoUrl;
+            }
+        });
+    </script>
+</body>
+</html>
