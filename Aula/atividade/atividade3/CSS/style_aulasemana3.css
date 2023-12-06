@@ -1,10 +1,24 @@
+/*@font-face {
+    font-family: minhaFonte;
+    src: url(/Aula/atividade/fonts/signatra/Signatra.ttf)
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 /*
+uma letra inlegivel 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
 
-*/
+
+roboto 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik+Pixels&display=swap" rel="stylesheet">
+
+
 .itemMenu{
     background-color: rgba(98, 162, 25, 0.863);
     border: 2px solid rgba(191, 209, 205, 0.993);
@@ -14,4 +28,89 @@ p{
     width: 6%;
     height: 2.5%;
 
+}
+
+h1{
+    font-size: 10px;
+    text-shadow: 50px 50 px 3px blue;
+
+}
+
+h2{
+    font-size: 50px;
+    text-shadow: 50px 50 px 3px darkgreen;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Times New Roman', Times, 'Comic Sans';
+}
+strong{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+em{
+    font-style: normal;
+    text-decoration: none;
+}
+
+.classeText{
+    line-height: 50px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
+    /*text-indent: ;quanto fica recuado*/
+
+/*.beBonita{
+    font-family: minhaFonte;
+}*/
+
+@font-face {
+    font-family: minhaFonte;
+    src: url('/Aula/atividade/fonts/signatra/Signatra.ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.itemMenu {
+    background-color: rgba(98, 162, 25, 0.863);
+    border: 2px solid rgba(191, 209, 205, 0.993);
+    margin: 2px;
+}
+
+p {
+    width: 6%;
+    height: 2.5%;
+}
+
+h1 {
+    font-size: 10px;
+    text-shadow: 5px 2px 3px blue;
+}
+
+h2 {
+    font-size: 50px;
+    text-shadow: 7px 1px 3px darkgreen;
+    font-family: minhaFonte, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Times New Roman', Times, 'Comic Sans';
+}
+
+strong {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.classeText {
+    line-height: 50px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    
+}
+
+.beBonita {
+    font-family: minhaFonte;
+    text-align: right;
 }
