@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#retangulo {
+    background-color: blue;
+    width: 200px;
+    height: 100vh; /* 100% da altura da viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+#menu li {
+    margin-bottom: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
+
+#conteudo {
+    margin-left: 220px; /* Deixe um espaço para o retângulo azul */
+    padding: 20px;
+}
