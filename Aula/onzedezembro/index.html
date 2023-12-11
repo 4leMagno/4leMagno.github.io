@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .pos1{
+            /*    para fazer criar uma posição dos quadrados
+
+            */
+            width: 100px;
+            height: 100px;
+            /*
+            como ocupar 100% da tela? with: 100% largura do quadrador - vw (view width ) ; heigth: 100% altura do quadrado é a tela inteira....
+            
+            */
+            overflow: hidden; /*vai corta tudo que passar da divisão
+            overflow: scroll; vai criar um barra de rolagem
+            overflow: auto; decide o que vai ser feito quando conteudo ultrapassar conteudo da div
+            como por a div 2 ao lado da div 1 ?  float left ;
+            com o display: melhor indicado para itens do menu, display: inline-block 
+            
+            */
+        }
+        /*
+        .quad1{
+            background-color: rgb(207, 38, 22);
+            color: black;
+            float: left;
+        }
+        */
+        .quad1{
+            background-color: purple;
+            color: white;
+            float: left;
+            width: 100vw;
+            height: 100px;
+            
+            
+        }
+        /*
+        .quad2{
+            background-color: greenyellow;
+            color: black;
+            float: left;
+        }
+        */
+        .quad2{
+            background-color: greenyellow;
+            color: black;
+            float: left;
+            width: 30%;
+            height: 100px;
+            opacity: 1;
+            /*opacity: 0; é a transparencia 0 é para não aparecer*/
+        }
+        /*
+        .quad3{
+            background-color: rgba(224, 117, 135, 0.943);
+            color: black;
+            ;
+        }
+        */
+        /*
+        .quad3{
+            background-color: pink;
+            color: black;
+            width: 70%;
+            height: 100px;
+            opacity: 1;
+        }
+        */
+        .quad3{
+
+            background-color: pink;
+            color: black;
+            width: 70%;
+            height: 100px;
+            opacity: 1;
+            overflow: hidden; 
+        }
+        .content{
+            float: clear;
+            width: 100vw;
+            height: 690px;
+            background-color: coral;
+        }
+        .content > p{
+            margin: auto auto auto auto;
+        }
+        .rodape{
+            width: 100vw;
+            height: 50px;
+            background-color: dodgerblue;
+        }
+        .teste{
+        
+            text-decoration: none;
+            display: flex; /* Usei flex para alinhar os itens lado a lado */
+            justify-content: center; /* Centraliza os itens horizontalmente */
+            align-items: center; /* Centraliza os itens verticalmente */
+            height: 100%;
+        
+        }
+        .teste > p {
+            display: inline-block;
+            text-align: center;
+            margin: 0 10px; /* Adicionei margens para separar os itens horizontalmente */
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!--<div class="pos1 quad1">
+        <p>Div 1</p>
+        <p>aqui tem uma divisão com pouco connteúdo</p>
+    </div>
+    <div class="pos1 quad2">
+        <p>Div 2</p>
+        <p>aqui tem uma divisão com pouco conteúdo com mais conteúdo</p>
+    </div>
+    <div class="pos1 quad3">
+        <p>Div 3</p>
+        <p>aqui tem uma divisão com pouco conteúdo para causar pane no sistema! ahahahahahahahhahahaaahha</p>    
+    </div>    -->
+    <header class="quad1">
+        <div class="quad2">
+            <p>LOGOTIPO</p>
+        </div>
+            <div class="quad3">
+                <nav class="teste">
+                    <p class="itemMenu"><a href="#">Página inicial</a></p>
+                    <p class="itemMenu"><a href="#">Aulas de html / css </a></p>
+                    <p class="itemMenu"><a href="#">Estudo</a></p>
+                    <p class="itemMenu"><a href="#">OAB</a></p>
+                    <p class="itemMenu"><a href="#">Contato</a></p>
+                </nav>
+            
+        </div>
+    </header>
+    <div class="content">
+        <p>CONTEÚDO</p>
+    </div>
+
+    <footer class="rodape">
+        <p>RODA PÉ</p>
+    </footer>
+</body>
+</html>
