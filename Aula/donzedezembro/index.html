@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Magno</title>
+    <link href="/Aula/donzedezembro/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/Aula/donzedezembro/imagem/tecnologia.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Rubik+Pixels&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="cabecalho-logo">
+            <h1>Alexandre Magno</h1>
+            <h2>Desenvolvedor Web</h2>
+            <!-- Atualizado o texto do cabeçalho -->
+                <h1>Página de Estudo e Portfólio</h1>
+                <h2>Desenvolvedor Web</h2>
+            </div>
+            <nav class="cabecalho-menu rounded-box">
+                <!-- Adicionadas classes para bordas arredondadas -->
+                <p class="itemMenu"><a href="#">HTML</a></p>
+                <p class="itemMenu"><a href="#">JavaScript</a></p>
+                <p class="itemMenu"><a href="#">CSS</a></p>
+                <p class="itemMenu"><a href="#">Contato</a></p>
+            </nav>
+        </header>
+    
+        <!-- Adicionadas classes "container" para melhor organização -->
+        <div class="container">
+            <div class="card">
+                <h2>HTML</h2>
+                <p>HTML, que significa Linguagem de Marcação de Hipertexto, é o bloco de construção mais básico da web. Ele fornece estrutura para o conteúdo, como títulos, parágrafos, listas, links, imagens e outros elementos.</p>
+    
+                <!-- Caixa destacada com exemplo de estrutura genérica de um site em HTML -->
+                <div class="example-box">
+                    <h3>Estrutura Genérica de um Site em HTML</h3>
+                    <!-- Adicionado destaque de código com estilo -->
+                    <pre class="code-highlight">
+                        <code>
+                            <!DOCTYPE html>
+                            <html lang="pt-br">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Meu Site</title>
+                                <link rel="stylesheet" href="estilo.css">
+                            </head>
+                            <body>
+                                <header>
+                                    <h1>Meu Site</h1>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Página Inicial</a></li>
+                                            <li><a href="#">Sobre</a></li>
+                                            <li><a href="#">Contato</a></li>
+                                        </ul>
+                                    </nav>
+                                </header>
+                                <section>
+                                    <article>
+                                        <h2>Título do Artigo</h2>
+                                        <p>Conteúdo do artigo...</p>
+                                    </article>
+                                    <aside>
+                                        <h3>Barra Lateral</h3>
+                                        <p>Conteúdo da barra lateral...</p>
+                                    </aside>
+                                </section>
+                                <footer>
+                                    <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+                                </footer>
+                            </body>
+                            </html>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+    
+            <div class="card">
+                <h2>JavaScript</h2>
+                <p>JavaScript é uma linguagem de programação de alto nível e de script que permite interatividade dinâmica nos navegadores. O básico inclui variáveis, estruturas de controle de fluxo e funções.</p>
+    
+                <!-- Caixa destacada com principais comandos JavaScript -->
+                <div class="highlight-box">
+                    <h3>Principais Comandos JavaScript</h3>
+                    <pre class="code-highlight">
+                        <code>
+                            // Declaração de variáveis
+                            let nome = "Usuário";
+                            const PI = 3.14;
+    
+                            // Estruturas de Controle de Fluxo
+                            if (condicao) {
+                                // código a ser executado se a condição for verdadeira
+                            } else {
+                                // código a ser executado se a condição for falsa
+                            }
+    
+                            for (let i = 0; i < 5; i++) {
+                                // código a ser repetido
+                            }
+    
+                            // Funções
+                            function saudacao() {
+                                return "Olá, " + nome + "!";
+                            }
+    
+                            // Chamada de Função
+                            let mensagem = saudacao();
+                            console.log(mensagem);
+                        </code>
+                    </pre>
+                </div>
+            </div>
+    
+            <div class="card">
+                <h2>CSS</h2>
+                <p>CSS, que significa Folhas de Estilo em Cascata, é usado para estilizar e formatar o conteúdo HTML. Ele controla o layout, as cores, as fontes e outros aspectos visuais de uma página web.</p>
+    
+                <!-- Caixa destacada com principais comandos e dicas de CSS -->
+                <div class="highlight-box">
+                    <h3>Principais Comandos e Dicas de CSS</h3>
+                    <pre class="code-highlight">
+                        <code>
+                            /* Estilizar um elemento */
+                            selector {
+                                property: value;
+                            }
+    
+                            /* Selecionar por classe */
+                            .minha-classe {
+                                /* estilos aqui */
+                            }
+    
+                            /* Selecionar por ID */
+                            #meu-id {
+                                /* estilos aqui */
+                            }
+    
+                            /* Estilizar links */
+                            a {
+                                text-decoration: none;
+                                color: #3498db; /* Azul */
+                                transition: color 0.3s ease;
+                            }
+    
+                            a:hover {
+                                color: #e74c3c; /* Vermelho quando hover */
+                            }
+    
+                            /* Layout Responsivo */
+                            @media screen and (max-width: 600px) {
+                                /* Estilos para telas menores */
+                            }
+                        </code>
+                    </pre>
+    
+                    <p>Dicas para tornar o site atraente:</p>
+                    <ul>
+                        <li>Escolha uma paleta de cores harmoniosa.</li>
+                        <li>Utilize fontes legíveis.</li>
+                        <li>Adicione espaçamento adequado para melhor legibilidade.</li>
+                        <li>Use imagens e ícones de forma equilibrada.</li>
+                        <li>Adote um layout responsivo para diferentes dispositivos.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="card">
+                <h2>Projetos</h2>
+                <p>Aqui deveria ter uma imagem bem bonita, imagine.</p>
+    
+                <!-- Atividade Prática e Projeto Simples -->
+                <div class="project-box">
+                    <img src="caminho/da/imagem/atividade.jpg" alt="Atividade Prática">
+                    <h3>Atividade Prática e Projeto Simples</h3>
+                    <p>
+                        A atividade prática consiste na criação de um site simples utilizando os conceitos de HTML, CSS e JavaScript. Os alunos serão desafiados a aplicar os conhecimentos adquiridos em sala de aula para desenvolver uma página web funcional.
+                    </p>
+                    <p>
+                        O projeto incluirá a estruturação do conteúdo com HTML, a estilização usando CSS para tornar o site visualmente atraente e a adição de interatividade dinâmica com JavaScript. Serão encorajados a explorar diferentes elementos e técnicas para personalizar o projeto de acordo com suas preferências.
+                    </p>
+                    <p>
+                        A ênfase será na prática dos conceitos fundamentais, proporcionando aos alunos a oportunidade de consolidar seus conhecimentos e desenvolver habilidades práticas essenciais para a área de desenvolvimento web.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div class="container">
+                <h3>Entre em Contato</h3>
+                <p>Email: desenvolvedor@email.com</p>
+                <div class="social">
+                    <a href="https://github.com/4leMagno" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/seuperfil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/4leMagno" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://wa.me/seu_numero_de_whatsapp" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/seu_perfil/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-content">
+                    <h6>Desenvolvido por Alê</h6>
+                    <h5>2023</h5>
+                </div>
+            </div>
+        </footer>
+
+         
+        <!-- Adicionado script para ativar realce de sintaxe -->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</body>
+</html> 

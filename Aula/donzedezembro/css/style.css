@@ -1,0 +1,281 @@
+/*body {
+    font-family: 'Roboto', sans-serif;
+    }*/
+    /*
+    --- aula de  hoje ---
+
+    flex box
+
+    inicializado a partir do display. 
+
+    1) justify-content
+    
+        -> Justificar o conteudo. Fazer o posicionamento na horizontal. No centro, esquerda, direita, espaçar, aproximar
+
+    2 ) flex-direction 
+    
+        ->idica se será linha ou coluna 
+            row - linha 
+
+            column - coluna
+
+    3) aling-itens
+        -> lembra o justify-content, porém fará na vertical 
+    
+    4) flex-wrap
+        -> onde pode ser quebrado
+
+    5) order 
+    
+        -> a ordem no flex box não importa. As div devem ser ordenadas por auqi...
+
+    6) flex-grow
+
+        -> o tamanho e proporção de cada coisa. 
+
+    */
+/*-------------------------------*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --corPrincipal: #000;
+    --corSecundaria: #fff;
+    --corTerciaria: #008080;
+    --corDaAnimacao: #797878;
+}
+h1 {
+    font-family: 'Rubik Pixels', sans-serif;
+    color: var(--corTerciaria)
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--corPrincipal);
+    
+}
+.cabecalho-logo{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}  
+
+.cabecalho-menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 4;
+    height: 10vh;
+    align-items: center;
+
+}
+a{
+    margin:  0 1vw 0 1vw;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+}
+a:link{
+color: var(--corSecundaria)
+}
+a:visited{
+color: var(--corSecundaria)
+}
+a:active{
+color: var(--corSecundaria)
+}
+a:hover{
+color: var(--corDaAnimacao);
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.esquerda, .centro, .direita {
+    flex: 1;
+}
+
+.footer {
+    background-color: var(--corPrincipal);
+    color: var(--corSecundaria);
+    text-align: center;
+    padding: 10px;
+}*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #3498db; /* Azul */
+    --cor-secundaria: #ecf0f1; /* Prata */
+    --cor-texto: #2c3e50; /* Cinza escuro para texto */
+    --cor-da-animacao: #e74c3c; /* Vermelho para a animação */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.itemMenu {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    transition: color 0.3s ease;
+}
+
+a:link {
+    color: var(--cor-secundaria);
+}
+
+a:visited {
+    color: var(--cor-secundaria);
+}
+
+a:active {
+    color: var(--cor-secundaria);
+}
+
+a:hover {
+    color: var(--cor-da-animacao);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 40px;
+}
+
+h1, h2, h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.itemMenu {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: large;
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+    transition: color 0.3s ease;
+}
+
+a:link {
+    color: var(--cor-secundaria);
+}
+
+a:visited {
+    color: var(--cor-secundaria);
+}
+
+a:active {
+    color: var(--cor-secundaria);
+}
+
+a:hover {
+    color: var(--cor-da-animacao);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--cor-secundaria);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: var(--cor-secundaria);
+}
