@@ -109,11 +109,13 @@ section {
 
 
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 :root {
     --cor-primaria: #3498db; /* Azul */
     --cor-secundaria: #ecf0f1; /* Prata */
@@ -125,59 +127,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-}
-
-header {
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-    text-align: center;
-    padding: 40px;
-}
-
-h1, h2, h3 {
-    color: var(--cor-secundaria);
-    margin-bottom: 10px;
-}
-
-.cabecalho-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    background-color: var(--cor-primaria);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.itemMenu {
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: large;
-    text-transform: uppercase;
-    color: var(--cor-secundaria);
-    transition: color 0.3s ease;
-}
-
-a:link {
-    color: var(--cor-secundaria);
-}
-
-a:visited {
-    color: var(--cor-secundaria);
-}
-
-a:active {
-    color: var(--cor-secundaria);
-}
-
-a:hover {
-    color: var(--cor-da-animacao);
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
+    text-align: center; /* Adicionado para centralizar o conteúdo */
 }
 
 header {
