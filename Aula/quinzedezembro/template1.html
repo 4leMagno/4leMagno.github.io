@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Magno</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Uma coluna para o conteúdo principal */
+            grid-template-rows: auto auto auto; /* Três linhas automáticas para o cabeçalho, o menu e o conteúdo principal */
+            gap: 20px; /* Espaçamento entre as linhas e colunas */
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .header {
+            position: relative;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-width: 100%;
+            max-height: 200px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .menu-bar {
+            background-color: rgb(222, 88, 6);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            margin-bottom: 20px; /* Espaçamento maior abaixo do menu */
+            grid-column: 1;
+            grid-row: 2; /* Linha 2 para o menu */
+        }
+
+        .menu-bar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            border-right: 1px solid white;
+        }
+
+        .menu-bar a:last-child {
+            border-right: none; /* Remove a borda direita do último item */
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 300px 1fr; /* Duas colunas: barra lateral e conteúdo principal */
+            gap: 20px; /* Espaçamento entre as colunas */
+            grid-column: 1;
+            grid-row: 3; /* Linha 3 para o conteúdo principal */
+        }
+
+        .sidebar {
+            background-color: #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .topic {
+            width: 100%;
+            height: 30px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .news {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .news h2 {
+            color: #ccc;
+            text-align: center;
+        }
+
+        .news p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main-rectangle">
+                <img src="/Aula/quinzedezembro/imagens/professor.enc" alt="Sua Imagem">
+            </div>
+        </div>
+        <div class="menu-bar">
+            <div><a href="#">Faça seu filho dormir a noite toda</a></div>
+            <div><a href="#">Saiba mais sobre a mamada prolonga </a></div>
+            <div><a href="#">Problemas com a noite? Não consegue dormir? Clique Aqui!</a></div>
+            <div><a href="#">Faltou criatividade</a></div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="topic">Onde fica isso no site </div>
+                <div class="topic">Isto fica a onde? </div>
+                <div class="topic">Será que é aqui ?</div>
+                <div class="topic">Cadeê </div>
+                <div class="topic">vou ver onde é </div>
+            </div>
+            <div class="news">
+                <h2>The noticia</h2>
+                <div class="news">
+                    <h2>Título da Notícia</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <p>Phasellus eu nunc ac sem convallis laoreet. Integer id mi. Etiam quis quam. Praesent vel justo. Sed ut arcu. Morbi convallis hendrerit sem.</p>
+                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                    <p>Phasellus eu nunc ac sem convallis laoreet. Integer id mi. Etiam quis quam. Praesent vel justo. Sed ut arcu. Morbi convallis hendrerit sem.</p>
+                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

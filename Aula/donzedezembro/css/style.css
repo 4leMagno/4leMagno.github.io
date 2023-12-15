@@ -116,10 +116,49 @@ section {
     padding: 0;
 }
 
+header {
+    padding: 40px 20px;
+}
+
+.cabecalho-logo h1 {
+    color: var(--cor-texto); /* Usando a cor primária definida anteriormente */
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.cabecalho-logo h2 {
+    color: var(--cor-texto);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cabecalho-menu p {
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.itemMenu a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: color 0.3s ease;
+}
+
+.itemMenu a:hover {
+    color: var(--cor-da-animacao);
+}
+
+.cabecalho-logo {
+    text-align: center;
+}
+
+.cabecalho-menu {
+    text-align: center;
+}
+
 :root {
-    --cor-primaria: #3498db; /* Azul */
-    --cor-secundaria: #ecf0f1; /* Prata */
-    --cor-texto: #2c3e50; /* Cinza escuro para texto */
+    --cor-primaria: #4285f4; /* Azul mais intenso */
+    --cor-secundaria: #f0f0f0; /* Cinza mais claro */
+    --cor-texto: #333; /* Cinza escuro para texto */
     --cor-da-animacao: #e74c3c; /* Vermelho para a animação */
 }
 
@@ -172,11 +211,11 @@ a:link {
 }
 
 a:visited {
-    color: var(--cor-secundaria);
+    color: var(--cor-texto);
 }
 
 a:active {
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
 a:hover {

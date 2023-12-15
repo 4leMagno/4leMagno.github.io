@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            width: 100vw;
+            display: flex;
+        }
+
+        .container {
+            flex: 0 0 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        .Berg {
+            flex: 0 0 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 50px;
+            background-color: lightgray;
+        }
+
+        .Berg img {
+            width: 100px;
+        }
+
+        .Berg .description {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between; /* Ajustado para adicionar espaço entre os itens */
+            align-items: center;
+            margin-bottom: 3vh;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .rectangle-image,
+        .circle-image {
+            width: 200px; /* Ajustado para garantir consistência de tamanho */
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .circle-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .description {
+            text-align: center;
+            width: 200px;
+        }
+
+        .row .item:last-child {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Primeira Linha -->
+        <div class="row">
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/naruto picachu.jpg" alt="Imagem 1">
+                <div class="description">
+                    <p>Naruto foi no pokemon</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/OIG.jpg" alt="Imagem 2">
+                <div class="description">
+                    <p>Marvel?? </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/impossivel.jpg" alt="Imagem 3">
+                <div class="description">
+                    <p>será que é possivel</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda Linha -->
+        <div class="row">
+            <div class="item">
+                <div class="description">
+                    <p>Naruto foi no pokemon</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="description">
+                    <p>Marvel?? </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="description">
+                    <p>será que é possivel</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terceira Linha -->
+        <div class="row">
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/anos 90.jpg" alt="Imagem 5">
+                <div class="description">
+                    <p>Desenhos famosos nos anos 90 </p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/bruceleeeee.jpg" alt="Imagem 6">
+                <div class="description">
+                    <p>e se? O Bruce fosse jiujiteiro?</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="rectangle-image" src="/Aula/quinzedezembro/imagens/anos95.jpg" alt="Imagem 7">
+                <div class="description">
+                    <p>Mais desenhos famosos! </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quarta Linha -->
+        <div class="row">
+            <div class="item">
+                <div class="description">
+                    <p>Desenhos famosos nos anos 90 </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="description">
+                    <p>e se? O Bruce fosse jiujiteiro?</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="description">
+                    <p>Mais desenhos famosos! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Berg">
+        <img class="circle-image" src="/Aula/quinzedezembro/imagens/professor.enc" alt="Imagem 4">
+        <div class="description">
+            <p class="TextoBerg">Natal</p>
+        </div>
+    </div>
+</body>
+
+</html>

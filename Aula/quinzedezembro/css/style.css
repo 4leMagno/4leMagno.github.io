@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .main-rectangle {
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+    background-color: #ccc; /* Cor de fundo do retângulo principal */
+    overflow: hidden;
+  }
+  
+  .main-rectangle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menu-bar {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    background-color: #333; /* Cor de fundo da barra de menu */
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-bar li {
+    margin-right: 20px;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 100px; /* Ajuste a largura conforme necessário */
+  }
+  
+  .square {
+    width: 100%;
+    height: 50px; /* Ajuste a altura conforme necessário */
+    background-color: #ddd; /* Cor de fundo dos quadrados */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .news {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .news h2 {
+    color: #333; /* Cor do título da notícia */
+  }
+  
+  .news p {
+    margin-bottom: 10px;
+  }
