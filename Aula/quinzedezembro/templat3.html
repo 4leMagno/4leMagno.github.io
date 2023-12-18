@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="vi
+    ,ewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo Flexbox</title>
     <style>
         body {
@@ -15,18 +16,21 @@
         }
 
         .container {
-            flex: 0 0 75%;
+            flex-grow: 3;
+            /*flex: 0 0 75%;*/
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             margin-top: 50px;
         }
 
         .Berg {
-            flex: 0 0 25%;
+            flex-grow: 1    ;
+            /*flex: 0 0 25%;*/
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center; /* Centraliza verticalmente */
             margin-top: 50px;
             background-color: lightgray;
         }
@@ -36,13 +40,12 @@
         }
 
         .Berg .description {
-            text-align: center;
-            margin-top: 10px;
+            text-align: center; /* Centraliza horizontalmente */
         }
 
         .row {
             display: flex;
-            justify-content: space-between; /* Ajustado para adicionar espaço entre os itens */
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 3vh;
         }
@@ -56,7 +59,7 @@
 
         .rectangle-image,
         .circle-image {
-            width: 200px; /* Ajustado para garantir consistência de tamanho */
+            width: 200px;
             height: 100px;
             object-fit: cover;
             margin-bottom: 10px;
@@ -108,17 +111,17 @@
         <div class="row">
             <div class="item">
                 <div class="description">
-                    <p>Naruto foi no pokemon</p>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="description">
-                    <p>Marvel?? </p>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="description">
-                    <p>será que é possivel</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -149,17 +152,17 @@
         <div class="row">
             <div class="item">
                 <div class="description">
-                    <p>Desenhos famosos nos anos 90 </p>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="description">
-                    <p>e se? O Bruce fosse jiujiteiro?</p>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
                 <div class="description">
-                    <p>Mais desenhos famosos! </p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -168,7 +171,7 @@
     <div class="Berg">
         <img class="circle-image" src="/Aula/quinzedezembro/imagens/professor.enc" alt="Imagem 4">
         <div class="description">
-            <p class="TextoBerg">Natal</p>
+            <p class="TextoBerg">O melhor professor de HTML e CSS</p>
         </div>
     </div>
 </body>
