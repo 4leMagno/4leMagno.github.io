@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #SaidaDeDados {
+            background-color: #fff;
+            color: #34a;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn-f1" onclick="changeColor()">Alterar Cor</button>
+
+    <div id="SaidaDeDados">Oi</div>
+
+    <script>
+        var contador = 0;
+
+        function changeColor() {
+            contador++;
+
+            var corQuente = '#FF6347'; // Coral
+            var corFria = '#87CEEB';   // Sky Blue
+
+            // Alternar entre cores quentes e frias com base no contador
+            var corAtual = contador % 2 === 0 ? corQuente : corFria;
+
+            // Atualizar a cor de fundo da div
+            document.getElementById('SaidaDeDados').style.backgroundColor = corAtual;
+        }
+    </script>
+</body>
+</html>

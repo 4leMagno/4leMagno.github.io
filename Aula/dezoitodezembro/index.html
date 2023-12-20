@@ -27,6 +27,7 @@
     </script>
 </body> -->
 <body>
+    <p> Vamos lembrar de ao sair do ambiente desligar a luz! </p>
     <!--<form>
         <button type="button" id="Ligada">Ligara a Luz</button>
         <button type="button" id="Desliga">Desligar a Luz</button>
@@ -36,12 +37,13 @@
         document.getElementById('Ligada').onclick((){document.getElementById('Ligada').innerHTML = 'Ligada'});
         document.getElementById('Desligada').onclick((){document.getElementById('Desligada').innerHTML = 'Desligada'});
     </script> -->
+    <p> O que é preciso fazer para desligar a luz?  </p>
     <form>
         <button type="button" id="Ligada" onclick="document.getElementById('Ligada').innerHTML = 'Ligada'; document.getElementById('imagemLuz').src = '/Aula/dezoitodezembro/imagem/pic_bulbon.gif'">Ligar a Luz</button>
         <button type="button" id="Desliga" onclick="document.getElementById('Desliga').innerHTML = 'Desligada'; document.getElementById('imagemLuz').src = '/Aula/dezoitodezembro/imagem/pic_bulboff.gif'">Desligar a Luz</button>
     </form>
     
-    <img id="imagemLuz" src="/Aula/dezoitodezembro/imagem/pic_bulbon.gif" alt="Luz Desligada">
+    <img id="imagemLuz" src="/Aula/dezoitodezembro/imagem/pic_bulbon.gif" alt="Luz Ligada">
     
 </body>
 
