@@ -1,0 +1,118 @@
+/* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+#titulo {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#lin,
+#comun {
+    font-size: medium;
+    text-align: left;
+    line-height: 2.0;
+    font-family: "Arial", sans-serif; 
+}
+
+#lin {
+    color: orange;
+}
+
+.caixa-centralizada,
+#titulo-caixa {
+    background: linear-gradient(rgba(44, 59, 194, 0.5), rgba(54, 128, 37, 0.5)),
+    url('/Joel/aula html/imagem/forte do reis.jpg') center/cover;
+
+background-color: #3498db;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-origin: content-box;
+background-attachment: fixed;
+
+width: 300px;
+height: 200px;
+color: white;
+text-align: center;
+padding: 20px;
+border: 2px solid #e74c3c;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}*/ 
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(27, 72, 216, 0.5), rgba(231, 228, 131, 0.5)),
+        url('/Joel/aula html/imagem/forte do reis.jpg') center/cover;
+    background-color: #e822e8;
+    width: 300px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-origin: content-box;
+    background-attachment: fixed;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px 1px rgba(231, 228, 131, 0.5);
+
+    text-align: center;
+    color: white;
+    padding: 20px;
+    }
+
+header h2{
+    color: aqua;
+    margin: 10px 0px 10px 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#lin {
+    font-size: medium;
+    color: orange;
+    text-align: left;
+    line-height: 2.0;
+}
+
+.comun {
+    font-size: medium;
+    color: black;
+    text-align: left;
+    line-height: 2.0;
+}
+
+.pixel {
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+
+.tipografica{
+    font:1.25em verdana, arial, tahoma, sans-serif;
+}
