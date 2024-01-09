@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <!-- Corrigindo o atributo "src" para "href" no link do estilo 
+    <link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+    <h1>MINHA LISTA DE TAREFAS</h1>
+    <!--<label for="task">Atividade:</label><input type="text" id="task"/>-->
+    <!-- Adicionando um formulário para envolver a entrada de tarefa e o botão -->
+    <form id="taskForm">
+        <input type="text" id="task" placeholder="Adicionar nova Tarefa">
+        <button type="button" onclick="addTask()">Adicionar</button>
+    </form>
+    <ul id="tasklist"></ul>
+
+    
+</body>
+<script>
+    let tarefas =JSON.parse	( localStorage.getItem('tarefas'))||[]
+
+function addTask() {
+let task = document.getElementById("task").value;
+if(!task){
+    alert("preencha o campo")
+    return
+}
+tarefas.push(task)
+//console.table(tarefas)
+atualizarLista()
+
+
+localStorage.setItem('tarefas', JSON.stringify(tarefas));
+//let key = 'item1'
+//localStorage.setItem(key,'value')
+//let myItem = localStorage.getItem(key);
+//let myObj = { name: 'Gabriel', age: 25};
+
+//let myItem= JSON.parse(localStorage.getItem(key));
+
+}
+
+function atualizarLista(){
+let lista = document.getElementById("tasklist")
+tarefas.forEach(task => {
+    let item = document.createElement("li");
+        console.log(index)
+        let button = document.createElement("button")
+        button.textContent = "Apagar"
+        bt.setAttribute("onclick", `remover(${index})`)
+        item.textContent = task;
+        item.appendChild(button)
+        lista.appendChild(item);
+    });
+
+
+
+}
+
+function remover(id){
+    alert(id)
+}
+
+function saveTaskToLocalStorage(){
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
+}
+
+window.addEventListener('load', () => {
+    atualizarLista();
+});
+
+</script>
+</html>
